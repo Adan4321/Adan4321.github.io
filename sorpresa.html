@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hola</title>
+
+    <style>
+        *{
+            background-color: orange;
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        div{
+            background-color: rgba(252, 183, 54, 0.788);
+            border: 2px solid brown;
+            padding: 10px;
+            display: inline-block;
+            border-radius:20px;
+        }
+         h1{
+            color: rgb(1, 119, 165);
+        }
+        button:hover{
+            background-color: green;
+        }
+
+    </style>
+    <script>
+        function limpiarPantalla(){
+            h1Principal =document.getElementById("h1Principal");
+            parrafo= document.getElementById("pPrincipal");
+            boton= document.getElementById("boton");
+           if(h1Principal){
+            h1Principal.remove()
+           }
+            parrafo.innerHTML="Bañate JAJA";
+            parrafo.style.fontSize='43px';
+            parrafo.style.color='brown'
+            
+
+            if(boton){
+            boton.remove()
+           }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="h1Principal">Hola</h1>
+        
+        <p id="pPrincipal">
+            Tengo una sorpresa para vos
+        </p>
+        <button id="boton" onclick="limpiarPantalla()">Sorpresa!</button>
+    </div>
+</body>
+</html>
